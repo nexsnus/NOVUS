@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NOVUS.GG</title>
+  <meta name="description" content="Discover novus.gg, a free Roblox Script.">
+  <meta name="theme-color" content="#071b13">
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="NOVUS.GG">
+  <meta property="og:description" content="Discover novus.gg, a free Roblox Script.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="en_US">
+
+  <link rel="icon" type="image/png" href="images/icon.png">
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    .script-card { padding: 25px; margin-bottom: 65px; }
+    .script-top { display: flex; justify-content: space-between; align-items: center; gap: 15px; margin-bottom: 20px; }
+    .script-title { font-size: 19px; font-weight: 700; }
+
+    .code-window { background: rgba(0, 0, 0, .24); border: 1px solid rgba(255, 255, 255, .08); border-radius: 15px; overflow: hidden; }
+    .code-bar { padding: 12px 16px; border-bottom: 1px solid rgba(255, 255, 255, .08); display: flex; justify-content: space-between; color: #9eb0a3; font-size: 11px; }
+    .code-dots { display: flex; gap: 6px; align-items: center; }
+    .code-dots i { width: 7px; height: 7px; border-radius: 50%; background: rgba(255, 255, 255, .3); }
+    pre { padding: 20px; overflow-x: auto; color: #c4e4cc; font: 13px/1.8 var(--mono); white-space: pre; }
+    .copy-note { color: var(--muted); font-size: 11px; margin-top: 13px; }
+
+    @media (max-width: 750px) {
+      .script-card { padding: 17px; }
+      .script-top { align-items: flex-start; flex-direction: column; }
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="nav">
+    <a href="homepage.html" class="brand">NOVUS.</a>
+
+    <div class="nav-links">
+      <a href="#script">Script</a>
+      <a href="#universal">Universal Features</a>
+      <a href="#games">Supported Games</a>
+    </div>
+  </nav>
+
+  <main class="container">
+    <section class="hero">
+      <div class="eyebrow"><span class="status-dot"></span>NOVUS.GG</div>
+
+      <h1>One script.<br><span>Infinite possibilities.</span></h1>
+
+      <p>The only Script you will ever need!</p>
+    </section>
+
+    <section class="script-card glass" id="script">
+      <div class="script-top">
+        <div>
+          <div class="script-title">loadstring</div>
+          <div class="muted-small" style="margin-top:5px">Latest script version · Copy and use</div>
+        </div>
+
+        <button class="btn" id="copyButton" type="button">Copy Script ↗</button>
+      </div>
+
+      <div class="code-window">
+        <div class="code-bar">
+          <div class="code-dots"><i></i><i></i><i></i></div>
+          <span>loader.lua</span>
+        </div>
+        <pre id="scriptContent">loadstring(game:HttpGet("https://raw.githubusercontent.com/nexsnus/Roblox/refs/heads/main/Scripts/Novus.gg/Modules/Loader/Loader.lua"))()</pre>
+      </div>
+
+      <div class="copy-note" id="copyNote">Click the button to copy the complete script to your clipboard.</div>
+    </section>
+
+    <section class="section" id="features">
+      <div class="section-label">Compatibility</div>
+
+      <div class="section-heading" id="universal">
+        <h2>Universal Features</h2>
+      </div>
+      <div class="grid" id="universalGrid">
+        <article class="card glass"><div class="card-title">AntiAFK</div></article>
+
+        <article class="card glass"><div class="card-title">Auto Clicker</div></article>
+
+        <article class="card glass"><div class="card-title">Low Graphics Mode</div></article>
+      </div>
+
+      <div class="section-heading" id="games">
+        <h2>Supported Games</h2>
+        <div class="muted-small" id="gameCount">0 supported games</div>
+      </div>
+      <div class="grid" id="gamesGrid">
+        <article class="card glass card-row">
+          <div>
+            <div class="card-title">Arsenal</div>
+            <div class="card-meta">Last update: 14.01.2026</div>
+          </div>
+          <span class="badge">Supported</span>
+        </article>
+
+        <article class="card glass card-row">
+          <div>
+            <div class="card-title">Bee Rich</div>
+            <div class="card-meta">Last update: 11.12.2025</div>
+          </div>
+          <span class="badge">Supported</span>
+        </article>
+
+        <article class="card glass card-row">
+          <div>
+            <div class="card-title">Break Your Bones</div>
+            <div class="card-meta">Last update: 11.12.2025</div>
+          </div>
+          <span class="badge">Supported</span>
+        </article>
+
+        <article class="card glass card-row">
+          <div>
+            <div class="card-title">Cars vs Trucks</div>
+            <div class="card-meta">Last update: 20.12.2025</div>
+          </div>
+          <span class="badge">Supported</span>
+        </article>
+
+        <article class="card glass card-row">
+          <div>
+            <div class="card-title">Chop Your Tree</div>
+            <div class="card-meta">Last update: 09.01.2026</div>
+          </div>
+          <span class="badge">Supported</span>
+        </article>
+
+        <article class="card glass card-row">
+          <div>
+            <div class="card-title">Clicker Simulator X</div>
+            <div class="card-meta">Last update: 17.12.2025</div>
+          </div>
+          <span class="badge">Supported</span>
+        </article>
+
+        <article class="card glass card-row">
+          <div>
+            <div class="card-title">Horse Race</div>
+            <div class="card-meta">Last update: 13.12.2025</div>
+          </div>
+          <span class="badge">Supported</span>
+        </article>
+
+        <article class="card glass card-row">
+          <div>
+            <div class="card-title">My Wood Farm</div>
+            <div class="card-meta">Last update: 29.08.2026</div>
+          </div>
+          <span class="badge">Supported</span>
+        </article>
+
+        <article class="card glass card-row">
+          <div>
+            <div class="card-title">Ninja Legends</div>
+            <div class="card-meta">Last update: 06.01.2026</div>
+          </div>
+          <span class="badge">Supported</span>
+        </article>
+
+        <article class="card glass card-row">
+          <div>
+            <div class="card-title">Speed Run Simulator</div>
+            <div class="card-meta">Last update: 11.12.2025</div>
+          </div>
+          <span class="badge">Supported</span>
+        </article>
+
+        <article class="card glass card-row">
+          <div>
+            <div class="card-title">Tap Simulator</div>
+            <div class="card-meta">Last update: 31.12.2025</div>
+          </div>
+          <span class="badge">Supported</span>
+        </article>
+
+        <article class="card glass card-row">
+          <div>
+            <div class="card-title">Taxi Boss</div>
+            <div class="card-meta">Last update: 13.01.2026</div>
+          </div>
+          <span class="badge">Supported</span>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="container footer">
+    <span>© 2026 NOVUS. Made with curiosity.</span>
+    <span>Not affiliated with Roblox.</span>
+  </footer>
+
+  <script>
+    const button = document.getElementById("copyButton");
+    const note = document.getElementById("copyNote");
+
+    button.addEventListener("click", async () => {
+      const script = document.getElementById("scriptContent").textContent;
+
+      try {
+        await navigator.clipboard.writeText(script);
+        button.textContent = "Copied ✓";
+        note.textContent = "The script has been copied to your clipboard.";
+        setTimeout(() => { button.textContent = "Copy Script ↗"; }, 2000);
+      } catch (error) {
+        const range = document.createRange();
+        range.selectNodeContents(document.getElementById("scriptContent"));
+        const selection = window.getSelection();
+        selection.removeAllRanges();
+        selection.addRange(range);
+        note.textContent = "Clipboard access failed. Select and copy the script manually.";
+      }
+    });
+
+    const gameCount = document.querySelectorAll("#gamesGrid .card").length;
+    document.getElementById("gameCount").textContent =
+      gameCount + (gameCount === 1 ? " supported game" : " supported games");
+  </script>
+</body>
+</html>

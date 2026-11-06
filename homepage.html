@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NOVUS — Independent projects</title>
+  <meta name="description" content="Explore the projects and software made by NOVUS.">
+  <meta name="theme-color" content="#071b13">
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="NOVUS — Independent projects">
+  <meta property="og:description" content="Explore the projects and software made by NOVUS.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="en_US">
+
+  <link rel="icon" type="image/png" href="images/icon.png">
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    .hero { padding-top: 90px; }
+    .hero h1 { font-size: clamp(64px, 12vw, 120px); letter-spacing: -7px; }
+
+    .project { min-height: 235px; padding: 25px; display: flex; flex-direction: column; position: relative; overflow: hidden; }
+    .project::before {
+      content: "";
+      position: absolute;
+      width: 230px; height: 230px;
+      right: -90px; top: -110px;
+      border-radius: 50%;
+      background: #c5dda9;
+      filter: blur(55px);
+      opacity: .22;
+      pointer-events: none;
+    }
+    .project.roblox::before { background: #d8e1d0; }
+    .project:hover { border-color: rgba(255, 255, 255, .42); transform: translateY(-5px); }
+
+    .project-top { display: flex; justify-content: space-between; align-items: center; position: relative; }
+    .icon {
+      width: 43px; height: 43px;
+      border-radius: 14px;
+      background: rgba(255, 255, 255, .13);
+      border: 1px solid rgba(255, 255, 255, .22);
+      display: grid; place-items: center;
+    }
+    .tag {
+      font-size: 10px; letter-spacing: 1.2px; text-transform: uppercase;
+      padding: 6px 10px; border-radius: 99px;
+      border: 1px solid rgba(255, 255, 255, .18);
+      background: rgba(255, 255, 255, .07);
+      color: rgba(255, 255, 255, .75);
+    }
+    .project-bottom { position: relative; margin-top: auto; padding-top: 35px; }
+    .project-bottom h2 { font-size: 32px; letter-spacing: -1.5px; margin: 5px 0; }
+    .project-bottom p { max-width: 340px; }
+    .open {
+      position: absolute; right: 0; bottom: 2px;
+      width: 38px; height: 38px;
+      border-radius: 50%;
+      display: grid; place-items: center;
+      background: rgba(255, 255, 255, .16);
+      border: 1px solid rgba(255, 255, 255, .25);
+      transition: .2s;
+    }
+    .project:hover .open { background: rgba(255, 255, 255, .27); transform: translate(2px, -2px); }
+  </style>
+</head>
+
+<body>
+  <nav class="nav">
+    <a href="homepage.html" class="brand">NOVUS.</a>
+    <div class="nav-links"><span>Independent projects &amp; software</span></div>
+  </nav>
+
+  <main class="container">
+    <section class="hero">
+      <div class="eyebrow"><span class="status-dot"></span>A little something different</div>
+
+      <h1>NOVUS<span>.</span></h1>
+
+      <p>A collection of things made with curiosity.<br>Pick a project and take a look around.</p>
+    </section>
+
+    <section class="section" aria-labelledby="projects-title">
+      <div class="section-heading">
+        <div>
+          <div class="section-label">The collection</div>
+          <h2 id="projects-title">Choose your project.</h2>
+        </div>
+      </div>
+
+      <div class="grid">
+        <a class="project card glass" href="novusclient.html">
+          <div class="project-top">
+            <div class="icon"><img src="images/Minecraft.png" alt="" width="20" height="20"></div>
+            <span class="tag">Legitimate</span>
+          </div>
+          <div class="project-bottom">
+            <div class="section-label">Minecraft</div>
+            <h2>Novus Client</h2>
+            <p>Your Minecraft launcher for everything you need.</p>
+            <span class="open" aria-hidden="true">↗</span>
+          </div>
+        </a>
+
+        <a class="project roblox card glass" href="novusscript.html">
+          <div class="project-top">
+            <div class="icon"><img src="images/Roblox.png" alt="" width="20" height="20"></div>
+            <span class="tag">Not Legitimate</span>
+          </div>
+          <div class="project-bottom">
+            <div class="section-label">Roblox</div>
+            <h2>novus.gg</h2>
+            <p>Multipurpose Hub for Roblox.</p>
+            <span class="open" aria-hidden="true">↗</span>
+          </div>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="container footer">
+    <span>© 2026 NOVUS. Made with curiosity.</span>
+    <span>Independent projects · Not affiliated with any Corporation.</span>
+  </footer>
+</body>
+</html>
